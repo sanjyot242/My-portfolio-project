@@ -75,7 +75,7 @@ main {
   grid-template-areas:
     "bioimage bio bio"
     "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .bio-image {
   grid-area: bioimage;
@@ -89,7 +89,28 @@ main {
   grid-area: bio;
   font-size: 1.5rem;
 }
+.Education {
+  h3 {
+    text-align: center;
+    color: $secondry-color;
+  }
+  grid-area: job1;
+  font-size: 1.5rem;
+}
 
+.Skills {
+  h3 {
+    text-align: center;
+    color: $secondry-color;
+  }
+  grid-area: job2;
+  font-size: 1.5rem;
+}
+.job {
+  background: lighten($primary-color, 5);
+  padding: 5rem;
+  border-bottom: $secondry-color 5px solid;
+}
 //Work/projects
 .projects {
   display: grid;
@@ -105,6 +126,10 @@ main {
       border-color: $secondry-color;
       @include easeOut;
     }
+  }
+  p {
+    height: 200px;
+    font-weight: 250;
   }
 }
 

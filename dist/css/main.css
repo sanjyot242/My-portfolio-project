@@ -39,14 +39,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: rgba(55, 55, 55, 0.9);
+    background: rgba(31, 40, 57, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: rgba(68, 68, 68, 0.9);
+    background: rgba(40, 51, 74, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -57,14 +57,14 @@
       background: url(../img/me.jpg);
       background-size: cover;
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #f65058ff; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #f65058ff; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +76,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #f65058ff; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -94,7 +94,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #444;
+  background-color: #28334aff;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -112,7 +112,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.9); }
+      background: rgba(40, 51, 74, 0.9); }
 
 h1,
 h2,
@@ -128,7 +128,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(44, 56, 81, 0.5); }
 
 a {
   color: #fff;
@@ -140,7 +140,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #f65058ff; }
 
 main {
   padding: 4rem;
@@ -150,7 +150,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #f65058ff;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -161,19 +161,38 @@ main {
   display: grid;
   grid-gap: 35px;
   grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(2, 1fr); }
 
 .bio-image {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #eece1a 3px solid;
+  border: #f65058ff 3px solid;
   width: 250px;
   height: 250px; }
 
 .bio {
   grid-area: bio;
   font-size: 1.5rem; }
+
+.Education {
+  grid-area: job1;
+  font-size: 1.5rem; }
+  .Education h3 {
+    text-align: center;
+    color: #f65058ff; }
+
+.Skills {
+  grid-area: job2;
+  font-size: 1.5rem; }
+  .Skills h3 {
+    text-align: center;
+    color: #f65058ff; }
+
+.job {
+  background: #313e5b;
+  padding: 5rem;
+  border-bottom: #f65058ff 5px solid; }
 
 .projects {
   display: grid;
@@ -184,8 +203,11 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #f65058ff;
       transition: all 0.5s ease-out; }
+  .projects p {
+    height: 200px;
+    font-weight: 250; }
 
 .boxes {
   display: flex;
@@ -201,7 +223,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #f65058ff;
       color: #333; }
       .boxes div:hover span {
         color: #333; }
@@ -212,20 +234,20 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a; }
+    background: #f65058ff; }
 
 .btn-dark {
   background: black;
   color: #fff; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #a3b1ce;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #161c29;
   color: #fff;
   height: 60px; }
 
