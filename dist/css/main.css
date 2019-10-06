@@ -299,6 +299,15 @@ main {
     padding: 1rem; }
   main#home h1 {
     margin-top: 10vh; }
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    font-weight: 400; }
+    h1.lg-heading,
+    h2.lg-heading,
+    h3.lg-heading {
+      font-size: 4rem; }
   .projects {
     padding-left: 15%;
     width: 80%;
