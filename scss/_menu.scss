@@ -84,7 +84,7 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/me1.jpg);
+      background: url(../img/me.jpg);
       background-size: cover;
       border-radius: 50%;
       border: solid 3px $secondry-color;
@@ -111,7 +111,7 @@
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 300;
+    font-weight: 400;
     color: #fff;
     text-decoration: none;
     @include easeOut;
